@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Messaging</title>
+    <style>
+            .button {
+            display: inline-block;
+            padding: 0.3em 1.2em;
+            margin: 0 0.3em 0.3em 0;
+            border-radius: 2em;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            color: #FFFFFF;
+            background-color: #4eb5f1;
+            text-align: center;
+            transition: all 0.2s;
+        }
+        
+        .button:hover {
+            background-color: #4095c6;
+        }
+        
+        body {
+            background-color: #D6DAF0;
+            color: #000;
+            text-align: center;
+        }
+        
+        ul {
+            text-align: center;
+            list-style-position: inside;
+        }
+        
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #4095c6;
+            color: #000;
+            text-align: center;
+        }
+        
+        @media all and (max-width:30em) {
+            .button {
+                display: block;
+                margin: 0.2em auto;
+            }
+    </style>
+</head>
+
+<body>
+    <h2 style='color:gray'>Post history</h2>
+    <ul id="messages"></ul>
+    <input id="textbox" type="text" />
+    <button id="button" class="button">Send Post</button>
+    <script src="Messaging.js"></script>
+
+
+    <div class="footer">
+        <p><a href="https://noah670.com">Noah670 © 2020</a></p>
+        </footer>
+</body>
+
+</html>
